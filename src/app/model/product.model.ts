@@ -5,6 +5,6 @@ export class Product {
         public name?: string,
         public category?: string,
         public author?: string,
-        public image?: string,
+        public imagePath?: string,
         public price?: number) { }
 }
