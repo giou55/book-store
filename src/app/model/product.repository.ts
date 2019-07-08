@@ -13,10 +13,10 @@ export class ProductRepository {
         new Product(3, "100 Cult Films", "Κινηματογράφος", "ERNEST MATHIJS, XAVIER MENDIK", "assets/cult-films.jpg", 20.90),
         new Product(4, "Τα Ελληνικά Windows 98 για Πρωτάρηδες", "Πληροφορική-Υπολογιστές", "ANDY RATHBONE", "assets/windows-98.jpg", 10),
         new Product(5, "Μαθηματικά Πεντάλεπτα", "Επιστήμες-Τεχνολογία", "BEHRENDS EHRHARD", "assets/mathimatika-pentalepta.jpg", 24),
-        new Product(6, "Product 6", "Ιστορία", "Η Ελλάδα την εποχή του Όθωνα", "img/bowie.jpg", 12),
+        new Product(6, "Όσα δεν γνωρίζατε για τα χρόνια του Καποδίστρια, του Όθωνα και του Γεωργίου του Α΄", "Ιστορία", "ΣΥΛΛΟΓΙΚΟ ΕΡΓΟ", "assets/osa-den-gnorizate.jpg", 12),
         new Product(7, "Μόμπυ Ντικ", "Λογοτεχνία", "ΜΕΛΒΙΛ ΧΕΡΜΑΝ", "assets/moby.jpg", 15),
-        new Product(8, "Μαθηματικά Αινίγματα", "Επιστήμες-Τεχνολογία", "Μαθηματικά Αινίγματα", "img/bowie.jpg", 20),
-        new Product(9, "David Bowie – Αναζητώντας τον Starman", "Μουσική", "ΜΑΡΙΑ ΜΑΡΚΟΥΛΗ", "assets/bowie.jpg", 18),
+        new Product(8, "Η Κόμη της Βερενίκης", "Επιστήμες-Τεχνολογία", "ΓΙΩΡΓΟΣ ΓΡΑΜΜΑΤΙΚΑΚΗΣ", "assets/komi-tis-verenikis.jpg", 20),
+        new Product(9, "David Bowie – Αναζητώντας τον Starman", "Μουσική", "ΜΑΡΙΑ ΜΑΡΚΟΥΛΗ", "assets/starman.jpg", 18),
         new Product(10, "HTML and CSS", "Πληροφορική-Υπολογιστές", "JON DUCKETT", "assets/html.jpg", 11),
         new Product(11, "Οι φιλόσοφοι του αρχαίου κόσμου", "Φιλοσοφία", "TREVOR CURNOW", "img/bowie.jpg", 21),
         new Product(12, "Ο Βίος και η Πολιτεία του Σκρούτζ Μακ Ντακ", "Κόμικς", "ΝΤΟΝ ΡΟΣΑ", "assets/vios-kai-politeia.jpg", 8),
@@ -34,7 +34,7 @@ export class ProductRepository {
         new Product(24, "100 Cult Films", "Κινηματογράφος", "ERNEST MATHIJS, XAVIER MENDIK", "assets/cult-films.jpg", 20.90),
         new Product(25, "Έγκλημα και Τιμωρία", "Λογοτεχνία", "ΝΤΟΣΤΟΓΙΕΦΣΚΙ ΦΙΟΝΤΟΡ", "assets/eglima.jpg", 15),
         new Product(26, "Rock Εγκυκλοπαίδεια", "Μουσική", " ΣΥΛΛΟΓΙΚΟ ΕΡΓΟ", "assets/rock.jpg", 22),
-        new Product(27, "100 Cult Films", "Κινηματογράφος", "ERNEST MATHIJS, XAVIER MENDIK", "assets/cult-films.jpg", 20.90),
+        new Product(27, "100 Cult Films", "Κινηματογράφος", "ERNEST MATHIJS, XAVIER MENDIK", "assets/cult-films.jpg", 20.90)
     ];
 
     constructor(private dataSource: StaticDataSource) {
