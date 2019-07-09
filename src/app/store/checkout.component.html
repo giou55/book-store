@@ -15,7 +15,7 @@
   <form *ngIf="!orderSent" #form="ngForm" novalidate
         (ngSubmit)="submitOrder(form)" class="m-2">
     <div class="form-group">
-      <label>Name</label>
+      <label>Όνομα</label>
       <input class="form-control" #name="ngModel" name="name"
               [(ngModel)]="order.name" required />
       <span *ngIf="submitted && name.invalid" class="text-danger">
@@ -23,7 +23,7 @@
       </span>
     </div>
     <div class="form-group">
-      <label>Address</label>
+      <label>Διεύθυνση</label>
       <input class="form-control" #address="ngModel" name="address"
               [(ngModel)]="order.address" required />
       <span *ngIf="submitted && address.invalid" class="text-danger">
@@ -63,8 +63,8 @@
       </span>
     </div>
     <div class="text-center">
-      <button class="btn btn-secondary m-1" routerLink="/cart">Back</button>
-      <button class="btn btn-primary m-1" type="submit">Complete Order</button>
+      <button class="btn btn-secondary m-1" routerLink="/cart">Πίσω</button>
+      <button class="btn btn-primary m-1" type="submit">Ολοκλήρωση παραγγελίας</button>
     </div>
   </form>
   
