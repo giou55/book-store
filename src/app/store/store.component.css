@@ -11,7 +11,7 @@
     padding-top: 10px;
 }
 #search input[type=text] {
-    padding: 8px;
+    padding: 7px;
     font-size: 15px;
     border: 1px solid grey;
     float: left;
@@ -23,7 +23,7 @@
 #search button {
     float: left;
     width: 10%;
-    padding: 8px;
+    padding: 7px;
     background: #2196F3;
     color: white;
     font-size: 15px;
@@ -32,19 +32,26 @@
     cursor: pointer;
 }
 
-form.example button:hover {
+#search button:hover {
     background: #0b7dda;
 }
 
 /* Clear floats */
-form.example::after {
+#search::after {
     content: "";
     clear: both;
     display: table;
 }
+#login {
+    padding-top: 10px;
+}
+
+#cart{
+    padding-top: 10px;
+}
 
 #menu button {
-    padding: 3px;
+    padding: 4px;
     margin: 6px 14px 6px 0;
     border:1px solid #343a40;
     color:#fff;

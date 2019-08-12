@@ -2,18 +2,21 @@
 
   <div class="row">
 
-    <div class="col-4 bg-dark text-white">
+    <div class="col-12 col-md-4 bg-dark text-white">
       <img src="../../assets/logo.png" alt="" class="logo">
     </div>
-    <div class="col-4 bg-dark" id="search">
+    <div class="col-12 col-md-4 bg-dark" id="search">
         <input type="text" placeholder="Αναζήτηση.." name="search">
         <button type="submit"><i class="fa fa-search"></i></button>
     </div>
-    <div class="col-4 bg-dark">
+    <div class="col-12 col-md-2 bg-dark text-white" id="login">
+      Login or Register
+    </div>
+    <div class="col-12 col-md-2 bg-dark" id="cart">
       <cart-summary></cart-summary>
     </div>
 
-    <div class="col-12 p-2 bg-dark" id="menu">
+    <div class="col-12 p-1 bg-dark" id="menu">
       <button class="btn btn-outline-primary" (click)="changeCategory()">
         Αρχική
       </button>
