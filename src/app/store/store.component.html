@@ -1,26 +1,33 @@
 <div class="container-fluid">
-  <div class="row">
-    <div class="col bg-dark text-white">
-      <img src="../../assets/logo.png" alt="" class="logo">
-      <!-- <a class="navbar-brand">BOOK STORE</a> -->
-      <cart-summary></cart-summary>
-    </div>
-  </div>
+
   <div class="row">
 
-    <div class="col-2 p-2" id="menu">
-      <button class="btn btn-block btn-outline-primary" (click)="changeCategory()">
+    <div class="col-4 bg-dark text-white">
+      <img src="../../assets/logo.png" alt="" class="logo">
+    </div>
+    <div class="col-4 bg-dark" id="search">
+        <input type="text" placeholder="Αναζήτηση.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+    <div class="col-4 bg-dark">
+      <cart-summary></cart-summary>
+    </div>
+
+    <div class="col-12 p-2 bg-dark" id="menu">
+      <button class="btn btn-outline-primary" (click)="changeCategory()">
         Αρχική
       </button>
       <button *ngFor="let cat of categories" 
-          class="btn btn-outline-primary btn-block"
+          class="btn btn-outline-primary"
           [class.active]="cat == selectedCategory" (click)="changeCategory(cat)">
         {{cat}}
       </button>
     </div>
 
-    <div class="col-10 p-2" id="books">
+  </div>
 
+  <div class="row">
+    <div class="col-12 p-2" id="books">
 
       <div class="row">
         <div class="col-12">
@@ -43,27 +50,26 @@
       </div>
 
 
-    <div class="row">
+      <div class="row">
+        <div *ngFor="let product of products" class="col-2 card bg-light m-3">
+          <img src="{{ product.imagePath }}" alt="image">
+          <h4>{{product.name}}</h4>
+          <p>{{product.author}}</p>
 
-      <div *ngFor="let product of products" class="col-2 card bg-light m-3">
-        <img src="{{ product.imagePath }}" alt="image">
-        <h4>{{product.name}}</h4>
-        <p>{{product.author}}</p>
+          <div class="badge badge-pill badge-primary">
+              {{ product.price | currency:"USD":"symbol":"2.2-2" }}
+          </div>
 
-        <div class="badge badge-pill badge-primary">
-            {{ product.price | currency:"USD":"symbol":"2.2-2" }}
-        </div>
-
-        <div class="card-text bg-white p-1">
-          <button class="btn btn-success btn-sm"
-                  (click)="addProductToCart(product)">
-            Προσθήκη στο καλάθι
-          </button>
+          <div class="card-text bg-white p-1">
+            <button class="btn btn-success btn-sm"
+                    (click)="addProductToCart(product)">
+              Προσθήκη στο καλάθι
+            </button>
+          </div>
         </div>
       </div>
 
     </div>
 
-    </div>
   </div>
 </div>

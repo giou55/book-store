@@ -2,8 +2,57 @@
     margin: 10px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+/* Style the search field */
+#search {
+    padding-top: 10px;
+}
+#search input[type=text] {
+    padding: 8px;
+    font-size: 15px;
+    border: 1px solid grey;
+    float: left;
+    width: 70%;
+    background: #f1f1f1;
+}
+
+/* Style the submit button */
+#search button {
+    float: left;
+    width: 10%;
+    padding: 8px;
+    background: #2196F3;
+    color: white;
+    font-size: 15px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 #menu button {
     padding: 3px;
+    margin: 6px 14px 6px 0;
+    border:1px solid #343a40;
+    color:#fff;
+    background-color:transparent;
+}
+
+#menu button:hover, #menu button:focus {
+    border:1px solid #888;
 }
 
 #books img {
