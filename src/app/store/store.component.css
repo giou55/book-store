@@ -1,29 +1,33 @@
-.logo {
-    margin: 10px;
-    width: 80%;
+#topbar {
+    text-align: center;
 }
-
+.logo {
+    width: 70%;
+    margin: 10px;
+}
+#support {
+    display: none;
+}
 * {
     box-sizing: border-box;
 }
-
-/* Style the search field */
 #search {
     padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #search input[type=text] {
     padding: 7px;
     font-size: 15px;
     border: 1px solid grey;
     float: left;
-    width: 70%;
+    width: 80%;
     background: #f1f1f1;
 }
-
-/* Style the submit button */
 #search button {
     float: left;
-    width: 10%;
+    width: 20%;
     padding: 7px;
     background: #2196F3;
     color: white;
@@ -32,61 +36,102 @@
     border-left: none; /* Prevent double borders */
     cursor: pointer;
 }
-
 #search button:hover {
     background: #0b7dda;
 }
-
 /* Clear floats */
 #search::after {
     content: "";
     clear: both;
     display: table;
 }
-
-
-#support {
-    padding-top: 10px;
-    display: flex;
-    justify-content: center;
-}
 #headphones{
     display: inline-block;
-    width:20%;
-    font-size: 2rem;
-    margin-right: 6px;
+    font-size: 1.8rem;
 }
 #support-text{
-    text-align: left;
-    display: inline-block;
-    width:80%;
+    text-align: center;
+    margin-left: 6px;
+    font-size: 0.8rem;
 }
 #login {
     padding-top: 10px;
     text-align: center;
+    font-size: 1rem;
 }
-
 #cart{
     padding-top: 10px;
 }
-
-#menu button {
-    padding: 4px;
-    margin: 6px 14px 6px 0;
-    border:1px solid #343a40;
-    color:#fff;
-    background-color:transparent;
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,1);
+    cursor:pointer;
 }
-
-#menu button:hover, #menu button:focus {
-    border:1px solid #888;
+.navbar-dark .navbar-nav .nav-link:hover {
+    background-color:rgb(100, 100, 100);
 }
-
 #books img {
-    height:230px;
-    width: auto;
+    width: 100%;
+    height: auto;
 }
-
 #books h4 {
     font-size: 18px;
+}
+
+@media only screen and (min-width: 576px) {
+    .logo {
+        width: 60%;
+    }
+    #search input[type=text] {
+        width: 60%;
+    }
+    #search button {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #topbar {
+        text-align: left;
+    }
+    .logo {
+        width: 70%;
+    }
+    #search input[type=text] {
+        width: 80%;
+    }
+    #search button {
+        width: 20%;
+    }
+    .navbar-expand-md .navbar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: .7rem;
+        padding-left: .7rem;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .logo {
+        width: 60%;
+    }
+    #search input[type=text] {
+        width: 70%;
+    }
+    #search button {
+        width: 15%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    #topbar {
+        text-align: left;
+    }
+    #support {
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .logo {
+        width: 60%;
+    }
 }
