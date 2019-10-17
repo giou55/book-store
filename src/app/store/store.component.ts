@@ -11,7 +11,7 @@ import { Router } from "@angular/router";
 })
 export class StoreComponent {
     public selectedCategory = null;
-    public productsPerPage = 4;
+    public productsPerPage = 8;
     public selectedPage = 1;
 
     constructor(private repository: ProductRepository,

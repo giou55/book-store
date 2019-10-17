@@ -1,2 +1,37 @@
+.logo {
+    width: 60%;
+    margin: 10px;
+}
+@media only screen and (min-width: 576px) {
+    .logo {
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .logo {
+        width: 22%;
+    }
+    label {
+        width: 20%;
+    }
+    .form-control {
+        display: inline-block;
+        width: 60%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .logo {
+        width: 18%;
+    }
+    label {
+        width: 15%;
+    }
+    .form-control {
+        display: inline-block;
+        width: 60%;
+    }
+}
+
 input.ng-dirty.ng-invalid { border: 2px solid #ff0000 }
 input.ng-dirty.ng-valid { border: 2px solid #6bc502 }
+
