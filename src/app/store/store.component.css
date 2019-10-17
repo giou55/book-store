@@ -11,6 +11,13 @@
 * {
     box-sizing: border-box;
 }
+a {
+    color:#fff;
+}
+a:hover {
+    text-decoration: none;
+    color:#ccc
+}
 #search {
     padding-top: 10px;
     display: flex;
@@ -66,8 +73,12 @@
     color: rgba(255,255,255,1);
     cursor:pointer;
 }
+.navbar-dark .navbar-nav .nav-link.active {
+    border: 1px solid #777;
+    border-radius: 5px;
+}
 .navbar-dark .navbar-nav .nav-link:hover {
-    background-color:rgb(100, 100, 100);
+    color: #aaa;
 }
 #books img {
     width: 100%;
@@ -79,6 +90,10 @@
 .btn {
     white-space: pre-wrap;
 }
+#sidebar img {
+    margin-top: 1.8rem;
+}
+
 
 @media only screen and (min-width: 576px) {
     .logo {
