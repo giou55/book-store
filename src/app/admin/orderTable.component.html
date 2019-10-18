@@ -10,20 +10,20 @@
     </thead>
     <tbody>
         <tr *ngIf="getOrders().length == 0">
-            <td colspan="5">There are no orders</td>
+            <td colspan="5">Δεν υπάρχουν παραγγελίες</td>
         </tr>
         <ng-template ngFor let-o [ngForOf]="getOrders()">
             <tr>
                 <td>{{o.name}}</td>
                 <td>{{o.zip}}</td>
-                <th>Product</th>
-                <th>Quantity</th>
+                <th>Προϊόν</th>
+                <th>Ποσότητα</th>
                 <td>
                     <button class="btn btn-warning" (click)="markShipped(o)">
                         Ship
                     </button>
                     <button class="btn btn-danger" (click)="delete(o.id)">
-                        Delete
+                        Διαγραφή
                     </button>
                 </td>
             </tr>

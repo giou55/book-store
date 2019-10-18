@@ -2,9 +2,9 @@
     <thead>
         <tr>
             <th>ID</th>
-            <th>Name</th>
-            <th>Category</th>
-            <th>Price</th>
+            <th>Όνομα</th>
+            <th>Κατηγορία</th>
+            <th>Τιμή</th>
             <th></th>
         </tr>
     </thead>
@@ -17,15 +17,15 @@
             <td>
                 <button class="btn btn-sm btn-warning"
                         [routerLink]="['/admin/main/products/edit', p.id]">
-                    Edit
+                    Επεξεργασία
                 </button>
                 <button class="btn btn-sm btn-danger" (click)="deleteProduct(p.id)">
-                    Delete
+                    Διαγραφή
                 </button>
             </td>
         </tr>
     </tbody>
 </table>
 <button class="btn btn-primary" routerLink="/admin/main/products/create">
-    Create New Product
+    Δημιουργία νέου προϊόντος
 </button>

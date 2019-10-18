@@ -1,14 +1,14 @@
 <div class="bg-primary p-2 text-white" [class.bg-warning]="editing"
      [class.text-dark]="editing">
-    <h5>{{editing  ? "Edit" : "Create"}} Product</h5>
+    <h5>{{editing  ? "Επεξεργασία" : "Δημιουργία"}} Προϊόντος</h5>
 </div>
 <form novalidate #form="ngForm" (ngSubmit)="save(form)">
     <div class="form-group">
-        <label>Name</label>
+        <label>Όνομα</label>
         <input class="form-control" name="name" [(ngModel)]="product.name" />
     </div>
     <div class="form-group">
-        <label>Category</label>
+        <label>Κατηγορία</label>
         <input class="form-control" name="category" [(ngModel)]="product.category" />
     </div>
     <div class="form-group">
@@ -18,13 +18,13 @@
         </textarea>
     </div>
     <div class="form-group">
-        <label>Price</label>
+        <label>Τιμή</label>
         <input class="form-control" name="price" [(ngModel)]="product.price" />
     </div>
     <button type="submit" class="btn btn-primary" [class.btn-warning]="editing">
         {{editing ? "Save" : "Create"}}
     </button>
     <button type="reset" class="btn btn-secondary" routerLink="/admin/main/products">
-        Cancel
+        Ακύρωση
     </button>
 </form>
