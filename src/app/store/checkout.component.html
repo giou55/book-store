@@ -9,7 +9,7 @@
 <div *ngIf="orderSent" class="m-2 text-center">
     <h2>Ευχαριστούμε!</h2>
     <p>Ευχαριστούμε για την παραγγελία σας!</p>
-    <p>We'll ship your goods as soon as possible.</p>
+    <p>Θα αποστείλουμε τα προϊόντα σας το συντομότερο δυνατό.</p>
     <button class="btn btn-primary" routerLink="/store">Επιστροφή στο κατάστημα</button>
 </div>
 <form *ngIf="!orderSent" #form="ngForm" novalidate (ngSubmit)="submitOrder(form)" class="m-2">
