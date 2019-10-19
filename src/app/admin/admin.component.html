@@ -5,22 +5,22 @@
         </div>
     </div>
     <div class="row mt-2">
-        <div class="col-3">
-            <button class="btn btn-outline-info btn-block"
+        <div class="col-12">
+            <button class="btn btn-outline-info"
                     routerLink="/admin/main/products"
                     routerLinkActive="active">
                 Προϊόντα
             </button>
-            <button class="btn btn-outline-info btn-block"
+            <button class="btn btn-outline-info"
                     routerLink="/admin/main/orders"
                     routerLinkActive="active">
                 Παραγγελίες
             </button>
-            <button class="btn btn-outline-danger btn-block" (click)="logout()">
+            <button class="btn btn-outline-danger" (click)="logout()">
                 Logout
             </button>
         </div>
-        <div class="col-9">
+        <div class="col-12">
             <router-outlet></router-outlet>
         </div>
     </div>

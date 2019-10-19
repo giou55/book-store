@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { Product } from "./product.model";
-import { StaticDataSource } from "./static.datasource";
-//import { RestDataSource } from "./rest.datasource";
+//import { StaticDataSource } from "./static.datasource";
+import { RestDataSource } from "./rest.datasource";
 
 @Injectable()
 export class ProductRepository {
@@ -31,7 +31,7 @@ export class ProductRepository {
     //     new Product(20, "Τα ελληνικά Comics", "Κόμικς", "SOLOUP", "assets/comics.jpg", 20.90)
     // ];
 
-    constructor(private dataSource: StaticDataSource) {
+    constructor(private dataSource: RestDataSource) {
         dataSource.getProducts().subscribe(data => {
             this.products = data;
             this.categories = data.map(p => p.category)

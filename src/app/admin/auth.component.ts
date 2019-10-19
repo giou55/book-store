@@ -4,7 +4,8 @@ import { Router } from "@angular/router";
 import { AuthService } from "../model/auth.service";
 
 @Component({
-    templateUrl: "auth.component.html"
+    templateUrl: "auth.component.html",
+    styleUrls: ["auth.component.css"]
 })
 export class AuthComponent {
     public username: string;
@@ -21,10 +22,10 @@ export class AuthComponent {
                     if (response) {
                         this.router.navigateByUrl("/admin/main");
                     }
-                    this.errorMessage = "Authentication Failed";
+                    this.errorMessage = "Η πιστοποίηση απέτυχε";
                 })
         } else {
-            this.errorMessage = "Form Data Invalid";
+            this.errorMessage = "Μη έγκυρα δεδομένα";
         }
     }
 }
